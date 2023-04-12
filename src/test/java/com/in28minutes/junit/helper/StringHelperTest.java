@@ -63,5 +63,21 @@ public class StringHelperTest {
         assertTrue(helper.areFirstAndLastTwoCharactersTheSame("ABAB"));
     }
 
+    @Test
+    public void testAreFirstAndLastTwoCharactersTheSame_BasicEmptyCaseNegativeScenario() {
+//        assertFalse("Empty String provided",helper.areFirstAndLastTwoCharactersTheSame(""));
+        assertFalse(helper.areFirstAndLastTwoCharactersTheSame(""));
+    }
+
+    @Test
+    public void testAreFirstAndLastTwoCharactersTheSame_2UniquePositiveScenario() {
+        assertTrue(helper.areFirstAndLastTwoCharactersTheSame("AB"));
+    }
+
+    @Test
+    public void testAreFirstAndLastTwoCharactersTheSame_1UniqueNegativeScenario() {
+        assertFalse(helper.areFirstAndLastTwoCharactersTheSame("A"));
+    }
+
 
 }
