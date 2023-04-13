@@ -6,6 +6,10 @@ import java.util.List;
 import com.in28minutes.data.api.TodoService;
 
 public class TodoServiceStub implements TodoService {
+	//Disadvantages
+	//Dynamic conditions
+	//Service Definition
+
 	public List<String> retrieveTodos(String user) {
 		return Arrays.asList("Learn Spring MVC", "Learn Spring",
 				"Learn to Dance");
